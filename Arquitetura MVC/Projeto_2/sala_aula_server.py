@@ -12,7 +12,7 @@ def getAlunos():
 def getAlunoId(id_consulta):
     return aluno_controller.localizaPorId(id_consulta)
 
-@app.route("alunos/maior_media", methods=["GET"])
+@app.route("/alunos/maior_media", methods=["GET"])
 def getAlunoMaiorMedia():
     return aluno_controller.localizarPorMaiorMedia()
 
